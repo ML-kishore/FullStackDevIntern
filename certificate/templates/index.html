@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+</head>
+<body>
+    <h1>Certificate List</h1>
+    <ul>
+        {% for name in names %}
+            <li>
+                <a href="{{ url_for('get_certificate', name=name) }}" target="_blank">{{ name }}'s Certificate</a> |
+                <a href="{{ url_for('generate_pdf', name=name) }}" target="_blank">Download PDF</a>
+            </li>
+            
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 4f63d31 (Added Flask certificate generator)
+        {% endfor %}
+    </ul>
+</body>
+</html>
