@@ -101,3 +101,16 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+#Database Creation
+
+#Step 1 : Open MySQL Workbench
+
+#Step2 : Type this for creating database -> 'CREATE DATABASE FLASKAUTH;'
+
+#Step3 : Use Database - > 'USE FLASKAUTH;'
+
+#STEP4 : TABLE CREATION -> create table users(id int auto_increment primary key,email varchar(100) unique not null,password varchar(255) not null);
+
+#STEP5 : RUN 'PYTHON APP.PY'
